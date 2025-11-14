@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Kids World</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="background-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+      </div>
+
+      <header class="header">
+        <h1 class="main-title">
+          <span class="letter">M</span>
+          <span class="letter">a</span>
+          <span class="letter">g</span>
+          <span class="letter">i</span>
+          <span class="letter">c</span>
+          <span class="letter space"></span>
+          <span class="letter">K</span>
+          <span class="letter">i</span>
+          <span class="letter">d</span>
+          <span class="letter">s</span>
+        </h1>
+        <p class="subtitle">Where Fun Never Ends!</p>
+      </header>
+
+      <main class="main-content">
+        <div class="game-section">
+          <div class="card card-1">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">Color Magic</h3>
+            <p class="card-description">Create amazing rainbow patterns!</p>
+            <button class="btn btn-primary" data-game="color">Play Now</button>
+          </div>
+
+          <div class="card card-2">
+            <div class="card-icon">🎵</div>
+            <h3 class="card-title">Music Bubbles</h3>
+            <p class="card-description">Pop bubbles and make music!</p>
+            <button class="btn btn-primary" data-game="music">Play Now</button>
+          </div>
+
+          <div class="card card-3">
+            <div class="card-icon">⭐</div>
+            <h3 class="card-title">Star Collector</h3>
+            <p class="card-description">Catch falling stars and score!</p>
+            <button class="btn btn-primary" data-game="stars">Play Now</button>
+          </div>
+
+          <div class="card card-4">
+            <div class="card-icon">🦄</div>
+            <h3 class="card-title">Magic Draw</h3>
+            <p class="card-description">Draw with magical colors!</p>
+            <button class="btn btn-primary" data-game="draw">Play Now</button>
+          </div>
+        </div>
+
+        <div class="score-board">
+          <div class="score-item">
+            <span class="score-label">Score:</span>
+            <span class="score-value" id="score">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Level:</span>
+            <span class="score-value" id="level">1</span>
+          </div>
+        </div>
+      </main>
+
+      <div class="game-modal" id="gameModal">
+        <div class="modal-content">
+          <button class="close-btn" id="closeModal">×</button>
+          <div id="gameContainer"></div>
+        </div>
+      </div>
+
+      <div class="floating-elements">
+        <div class="float-emoji float-1">🌈</div>
+        <div class="float-emoji float-2">⭐</div>
+        <div class="float-emoji float-3">🎈</div>
+        <div class="float-emoji float-4">🦋</div>
+        <div class="float-emoji float-5">🌟</div>
+        <div class="float-emoji float-6">💫</div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
